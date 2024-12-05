@@ -19,7 +19,7 @@ The main directory includes the following notebooks:
   * Figures (from the generated output): Figure 2, Figure 3, Figure S3, and Figure S4
   * Feature selection
   * SOC energy predictions 
-* [TrainModels_predict_PT.ipynb](TrainModels_predict_PT.ipynb): Reproduces additional experiments using second-order perturbation theory (PT) as the target variable instead of MAE.
-  * Reproduces supplementary results, e.g., Figure S7.
-* [TrainModels_PT_as_feature.ipynb](TrainModels_PT_as_feature.ipynb): Explores the use of PT values as input features in the model.
+* [TrainModels_predict_PT.ipynb](TrainModels_predict_PT.ipynb): Reproduces additional experiments using second-order perturbation theory (PT) as the target variable instead of MAE:
+  * Reproduces supplementary results, e.g., Figure S7
+* [TrainModels_PT_as_feature.ipynb](TrainModels_PT_as_feature.ipynb): Explores the use of PT values as input features in the model:
   * This analysis corresponds to the discussion in lines 406-420 of the manuscript.
