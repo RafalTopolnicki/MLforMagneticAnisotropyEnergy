@@ -1,8 +1,10 @@
 import pandas as pd
 from src.utils import prediction_on_folds
+from src.consts import OUTPUTDIRECTORY
+import os
 
 
-def save_fold_predictions(cv_objs, labels, dfs, targets, filenamebase="", estimator_id=0, substrate="implicit"):
+def save_fold_predictions(cv_objs, labels, dfs, targets, filename="predictions", estimator_id=0, substrate="implicit"):
     assert len(cv_objs) == len(labels) == len(dfs) == len(targets), "Different lengths"
     txtoutput_label = []
     txtoutput_target = []
@@ -23,12 +25,12 @@ def save_fold_predictions(cv_objs, labels, dfs, targets, filenamebase="", estima
             "substrate": txtoutput_substrate,
         }
     )
-    txtfilepath = f"txtoutput/{filenamebase}.csv"
+    txtfilepath = os.path.join(OUTPUTDIRECTORY, f"{filename}.csv")
     txt_output.to_csv(txtfilepath, index=False)
     return txtfilepath
 
 
-def save_nofolds_predictions(estimators, labels, dfs, targets, filenamebase="", substrate="implicit"):
+def save_nofolds_predictions(estimators, labels, dfs, targets, filename="", substrate="implicit"):
     assert len(estimators) == len(labels) == len(dfs) == len(targets), "Different lengths"
     txtoutput_label = []
     txtoutput_target = []
@@ -57,6 +59,6 @@ def save_nofolds_predictions(estimators, labels, dfs, targets, filenamebase="", 
             "substrate": txtoutput_substrate,
         }
     )
-    txtfilepath = f"txtoutput/{filenamebase}.csv"
+    txtfilepath = os.path.join(OUTPUTDIRECTORY, f"{filename}.csv")
     txt_output.to_csv(txtfilepath, index=False)
     return txtfilepath
