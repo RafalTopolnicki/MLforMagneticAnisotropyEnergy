@@ -1,2 +1,0 @@
-OUTPUTDIRECTORY = "results"
-DATADIRECTORY = "data"

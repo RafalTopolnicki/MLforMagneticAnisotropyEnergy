@@ -1,3 +1,3 @@
 implicit MLR	MAErr=15.9738	RMSErr=22.3543	$R^2$	=0.44
-implicit LASSO	MAErr=16.1863	RMSErr=22.6051	$R^2$	=0.43
+implicit LASSO	MAErr=16.1862	RMSErr=22.6051	$R^2$	=0.43
 implicit ML	MAErr=8.2712	RMSErr=12.5021	$R^2$	=0.83

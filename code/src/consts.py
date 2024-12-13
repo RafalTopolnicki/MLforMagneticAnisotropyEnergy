@@ -1,0 +1,2 @@
+OUTPUTDIRECTORY = "../results"
+DATADIRECTORY = "../data"

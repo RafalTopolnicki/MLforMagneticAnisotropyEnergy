@@ -214,7 +214,7 @@ axs[2].text(0.05, 0.9, "c", fontsize=17, transform=axs[2].transAxes)
 # axs[2].grid()
 
 axs[1].set_xlabel("Number of features in the model", fontsize=14)
-#fig.savefig(os.path.join(OUTPUTDIRECTORY, "Figure_S4_part.pdf"))
+fig.savefig(os.path.join(OUTPUTDIRECTORY, "Figure_S4_part.pdf"))
 
 
 # # Build models for list selected 25 features
