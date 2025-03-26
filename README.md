@@ -9,7 +9,7 @@ enabling the reproduction of key results of the paper.
 
 ![Atomic structures and comparision of predictions made by the model with the DFT results](header_image.png)
 
-## Structure
+## Repository structure
 Most of the codebase is provided as notebooks, which include comments and references linking directly to specific parts of the manuscript 
 and suplementary information.
 
@@ -17,7 +17,7 @@ and suplementary information.
 * `code/src`: Includes additional code to be imported
 * `results`: Stores all generated outputs. These files can be used to reproduce the figures and tables presented in the manuscript.
 
-## Notebooks & script to Reproduce Results
+## Notebooks & script to reproduce results
 The main directory includes the `code/TrainModels.py` script, which can be run to reproduce all the paper's main results.  
 This script is a 1:1 copy of the [TrainModels.ipynb](code/TrainModels.ipynb) notebook. 
 You can use one or another, but for a better experience, we recommend using a notebook
