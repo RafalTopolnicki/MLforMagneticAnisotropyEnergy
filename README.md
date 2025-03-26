@@ -1,8 +1,17 @@
-# Interpretable machine learning model for quantum materials: Understanding magnetic anisotropy at the atomic level
-This repository contains the codebase and datasets associated with the manuscript, *Interpretable machine learning model for quantum materials: Understanding magnetic anisotropy at the atomic level*, enabling the reproduction of key results. 
+# Interpretable machine learning for atomic scale magnetic anisotropy in quantum materials
+This repository contains the codebase and datasets associated with the article
+
+*Interpretable machine learning for atomic scale magnetic  anisotropy in quantum materials*, 
+
+by: Jan Navrátil, Rafał Topolnicki, Michal Otyepka and Piotr Błoński
+
+enabling the reproduction of key results of the paper. 
+
+![Atomic structures and comparision of predictions made by the model with the DFT results](header_image.png)
 
 ## Structure
-Most of the codebase is provided as notebooks, which include comments and references linking directly to specific parts of the manuscript and suplementary information.
+Most of the codebase is provided as notebooks, which include comments and references linking directly to specific parts of the manuscript 
+and suplementary information.
 
 * `data`: Contains the complete dataset used to train the machine learning models.
 * `code/src`: Includes additional code to be imported
@@ -10,8 +19,8 @@ Most of the codebase is provided as notebooks, which include comments and refere
 
 ## Notebooks & script to Reproduce Results
 The main directory includes the `code/TrainModels.py` script, which can be run to reproduce all the paper's main results.  
-Such a script is required by OceanCode. This script is a 1:1 copy of the [TrainModels.ipynb](code/TrainModels.ipynb) notebook. 
-You can use one or another, but for a better experience, we recommend using a notebook (it is possible to execute the notebook inside the OceanCode capsule)
+This script is a 1:1 copy of the [TrainModels.ipynb](code/TrainModels.ipynb) notebook. 
+You can use one or another, but for a better experience, we recommend using a notebook
 
 The main directory includes the following notebooks:
 * [TrainModels.ipynb](code/TrainModels.ipynb): Reproduces the main results in the manuscript:
@@ -25,5 +34,4 @@ The main directory includes the following notebooks:
   * Figure S2: Pearson’s correlation coefficients
 * [TrainModels_predict_PT.ipynb](code/TrainModels_predict_PT.ipynb): Reproduces additional experiments using second-order perturbation theory (PT) as the target variable instead of MAE:
   * Reproduces supplementary results, e.g., Figure S7
-* [TrainModels_PT_as_feature.ipynb](code/TrainModels_PT_as_feature.ipynb): Explores the use of PT values as input features in the model:
-  * This analysis corresponds to the discussion in lines 406-420 of the manuscript.
+* [TrainModels_PT_as_feature.ipynb](code/TrainModels_PT_as_feature.ipynb): Explores the use of PT values as input features in the model
