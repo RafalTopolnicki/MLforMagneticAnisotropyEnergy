@@ -5,11 +5,11 @@ Mapping between dataset columns names and LaTeX
 # A1 = Bottom
 # A2 = Top
 label_dict = {
-    "MAE (meV)": "MAE",
-    "BG_ind_up": r"$BG_\text{ind}^{\uparrow}$",
-    "BG_ind_down": r"$BG_\text{ind}^{\downarrow}$",
-    "BG_dir_up": r"$BG_\text{dir}^{\uparrow}$",
-    "BG_dir_down": r"$BG_\text{dir}^{\downarrow}$",
+    "MAE (meV)": r"MAE$_\mathrm{SC}$",
+    "BG_ind_up": r"$BG_\mathrm{ind}^{\uparrow}$",
+    "BG_ind_down": r"$BG_\mathrm{ind}^{\downarrow}$",
+    "BG_dir_up": r"$BG_\mathrm{dir}^{\uparrow}$",
+    "BG_dir_down": r"$BG_\mathrm{dir}^{\downarrow}$",
     "dimer_len": r"$d_{len}$",
     "h_substrate": r"$h_{sub}$",
     "dimer_defect_dist": "dimerdefect",
